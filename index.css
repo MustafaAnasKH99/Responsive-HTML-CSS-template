@@ -1,0 +1,220 @@
+*{
+	border: 0px;
+	margin: 0px;
+}
+
+header, section, footer{
+	display: block;
+}
+
+section{
+	padding: 25px;
+}
+
+footer{
+	text-align: center;
+	padding: 25px;
+	background-color:  	#ffb92e;
+	color: white;
+	font-weight: bolder;
+}
+
+header{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color:  	#ffb92e;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+p{
+	text-align: justify;
+	margin: 5px;	
+}
+
+/* Navigation Bar */
+.navbar{
+	overflow: hidden;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	color: #f1f1f1;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+  
+.navbar .icon {
+	display: none;
+}
+
+/* Home */
+.home{
+	background-color:  	#ffb92e;
+}
+
+.home-title{
+	font-weight: bolder;
+	font-size: 45px;
+	font-family: "Georgia, serif";
+	color: #f1f1f1;
+}
+
+.home-paragraph{
+	margin-top: 15px; 
+	font-size: 20px;
+	color: #f2f2f2;
+	font-family: "Courier New";
+	font-weight: lighter;
+}
+
+button{
+	padding: 10px;
+	border-radius: 3px;
+	margin-top: 10px;
+	font-size: 20px;
+	background-color: #FFC34B;
+	color: #f1f1f1;
+	float: right;
+}
+
+/* About */
+div > p{
+	font-weight: bolder;
+	/* color: #f1f1f1;	  */
+	color: rgb(44, 44, 44);
+	font-family: "Courier New";
+	font-weight: lighter;
+	background-color: #f1f1f1;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+div + p{
+	/* color: #ffb92e; */
+	/* color: #4B87FF; */
+	font-weight: bolder;
+	/* color: #f1f1f1;	  */
+	color: rgb(44, 44, 44);
+	font-family: "Courier New";
+	font-weight: lighter;
+	background-color: #f1f1f1;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+.wrapper{
+	display: flex; 
+	flex-direction: row;
+}
+
+.par{
+	padding: 15px;	
+}
+
+/* Contact */
+.contact-title{
+	margin-bottom: 15px;
+	color: #FFC34B;
+	font-weight: bolder;
+	font-size: 45px;
+	font-family: "Georgia, serif";
+	font-family: "Courier New";
+}
+
+
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 15px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #4B87FF;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(34, 107, 255);
+}
+
+textarea{
+	background-color: #f1f1f1;
+	border: 0;
+	border-left: 2px solid rgb(34, 107, 255);
+	border-right: 2px solid rgb(34, 107, 255);
+	color: rgb(34, 107, 255);
+	font-size: 20px;
+}
+
+input[type=text]{
+	background-color: #f1f1f1;
+	border: 0;
+	border-left: 2px solid rgb(34, 107, 255);
+	color: rgb(34, 107, 255);
+	font-size: 20px;
+}
+
+.form-wrapper {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.button-wrapper{
+	display: flex;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon {
+	  float: right;
+	  display: block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.navbar.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+}
