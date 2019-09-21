@@ -58,7 +58,7 @@ p{
 
 /* Home */
 .home{
-	background-color:  	#ffb92e;
+	background-color:#ffb92e;
 }
 
 .home-title{
@@ -125,7 +125,6 @@ div + p{
 	font-family: "Georgia, serif";
 	font-family: "Courier New";
 }
-
 
 input[type=text], textarea {
 	width: 100%;
