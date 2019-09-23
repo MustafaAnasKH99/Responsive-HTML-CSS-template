@@ -84,6 +84,7 @@ button{
 	background-color: #FFC34B;
 	color: #f1f1f1;
 	float: right;
+	
 }
 
 /* About */
@@ -191,6 +192,10 @@ input[type=text]{
 @media screen and (max-width: 800px) {
 	.wrapper{
 		display: block;
+	}
+
+	button{
+		float: none;
 	}
 }
 
