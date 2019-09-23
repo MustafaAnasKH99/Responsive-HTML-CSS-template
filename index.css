@@ -62,7 +62,7 @@ p{
 }
 
 .home-title{
-	font-weight: bolder;
+	font-weight: 300;
 	font-size: 45px;
 	font-family: "Georgia, serif";
 	color: #f1f1f1;
@@ -83,8 +83,7 @@ button{
 	font-size: 20px;
 	background-color: #FFC34B;
 	color: #f1f1f1;
-	float: right;
-	
+	float: right;	
 }
 
 /* About */
@@ -96,6 +95,7 @@ div > p{
 	background-color: #f1f1f1;
 	padding: 25px;
 	border-radius: 5px;
+	border: 2px solid #f76267;
 }
 
 div + p{
@@ -106,6 +106,11 @@ div + p{
 	background-color: #f1f1f1;
 	padding: 25px;
 	border-radius: 5px;
+	border: 2px solid #f76267;
+}
+
+.about{
+	background-image: url("https://thomlom.dev/static/4387ca6998348faf1e9767f958b216d2/4aca8/cover.jpg");
 }
 
 .wrapper{
@@ -118,34 +123,51 @@ div + p{
 }
 
 /* Contact */
+.contact{
+	background-color: #ffb92e;
+	color: #fff;
+}
+
 .contact-title{
 	margin-bottom: 15px;
-	color: #FFC34B;
-	font-weight: bolder;
+	color: #fff;
+	/* font-weight: bolder; */
+	font-weight: 300;
 	font-size: 45px;
 	font-family: "Georgia, serif";
-	font-family: "Courier New";
 }
 
 input[type=text], textarea {
 	width: 100%;
 	padding: 15px;
 	border: 1px solid #ccc;
-	border-radius: 4px; 
+	/* border-radius: 4px;  */
 	box-sizing: border-box; 
 	margin-top: 6px; 
 	margin-bottom: 16px;
 	resize: vertical
 }
 
+input[type=text]:focus{
+	font-weight: bolder;
+	color: black;
+	border: 3px solid #f76267;
+}
+
+textarea:focus{
+	border: 3px solid #f76267;
+}
+
 input[type=submit] {
-	background-color: #4B87FF;
+	background-color: #f76267;
 	color: white;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 	width: 100%;
+	font-weight: bolder;
+	font-size: 25px;
 }
 
 input[type=submit]:hover {
@@ -153,12 +175,15 @@ input[type=submit]:hover {
 }
 
 textarea{
-	background-color: #f1f1f1;
+	background-color: rgba(0, 0, 0, 0.521);
 	border: 0;
 	border-left: 2px solid rgb(34, 107, 255);
 	border-right: 2px solid rgb(34, 107, 255);
 	color: rgb(34, 107, 255);
 	font-size: 20px;
+	font-weight: bolder;
+	color: black;
+	border: 1px solid black;
 }
 
 input[type=text]{
@@ -167,6 +192,10 @@ input[type=text]{
 	border-left: 2px solid rgb(34, 107, 255);
 	color: rgb(34, 107, 255);
 	font-size: 20px;
+	font-weight: bolder;
+	color: black;
+	border: 1px solid black;
+	margin: 2px;
 }
 
 .form-wrapper {
@@ -211,4 +240,16 @@ input[type=text]{
 	  display: block;
 	  text-align: left;
 	}
+}
+
+.navbar-logo{
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+}
+
+.header-wrapper{
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: space-between;
 }

@@ -10,13 +10,26 @@
 
 <body>
 	<header>
-		<div class="navbar" id="myNav">
-			<a href="#home" class="active">Home</a>
-			<a href="#about">About</a>
-			<a href="#contact">Contact Me</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<div class="header-wrapper">
+			<div class="navbar" id="myNav">
+				<a href="#home" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+				<a href="#about"><i class="fa fa-fw fa-search"></i>About</a>
+				<a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
-			</a>
+				</a>
+			</div>
+			<div class="navbar">
+				<a href="https://dev.to/mustafaanaskh99/">
+					<img src="dev.svg" alt="Dev.to logo" class="navbar-logo">
+				</a>
+				<a href="https://medium.com/@khmostafa4">
+					<img src="medium.svg" alt="Medium logo" class="navbar-logo">
+				</a>
+				<a href="https://gitlab.com/MustafaAnasKH99">
+					<img src="gitlab.svg" alt="GitLab logo" class="navbar-logo">
+				</a>
+			</div>
 		</div>
 	</header>
 	<section id="home" class="home">
@@ -45,20 +58,23 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 	</section>
 
-	<section id="contact">
+	<section id="contact" class="contact">
 		<h1 class="contact-title">Drop Me a Message</h1>
 		<div class="form-wrapper">
 			<form action="action_page.php">
 				<div class="wrapper">
 					<input type="text" id="fname" name="firstname" placeholder="First name..">
 					<input type="text" id="lname" name="lastname" placeholder="Family name..">
+					<input type="text" id="lname" name="lastname" placeholder="Email: ">
 				</div>
 				<textarea id="subject" name="subject" placeholder="Yea tell me.." style="height:200px"></textarea>
 				<div class="button-wrapper">
-					<input type="submit" value="Submit">
+					<input type="submit" value="Submit" onclick="alert('Email Sent');">
 				</div>
 			</form>
 		</div> 
